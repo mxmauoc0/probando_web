@@ -1,0 +1,7 @@
+/* ===== FUENTES LOCALES ===== */
+@font-face {
+  font-family: "AdventureTime";
+  src: url("./assets/fonts/adventuretime.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
