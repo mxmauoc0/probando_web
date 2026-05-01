@@ -229,3 +229,18 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 800px){
+    .card {
+        min-width: 160px;
+        min-height: 220px;
+        flex: 1;        /* <-- agrega esto */
+    }
+}
+
+@media (max-width: 480px){
+    .card {
+        width: 100%;
+        min-width: unset;   /* anula el min-width fijo */
+    }
+}

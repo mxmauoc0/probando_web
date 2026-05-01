@@ -69,18 +69,19 @@
 }
 
 /* TARJETAS DE PRODUCTOS */
-.products-carrusel-containerproducts-tarjetas{
+.products-carrusel{
     display: flex;  /* Para poder alinear el div de los productos al medio*/
     align-items: center;
     justify-content: center;
 }
+
 .products-tarjetas{
     display: flex;
     /* background-color: grey; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 45rem;   /* defino ancho máximo... */
+    max-width: 80%;   /* defino ancho máximo... */
     width : 100%;       /* y ocupo todo ese ancho */
 }
 
@@ -118,5 +119,20 @@ button:hover {
         background-image: url('../../assets/pages/phone-landing-background.png');
         overflow-y: auto;
         overflow-x: hidden;
+    }
+    .products-tarjetas{
+        max-width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    .products-carrusel{
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .products-tarjetas{
+        flex-direction: column;
+        align-items: center;
     }
 }

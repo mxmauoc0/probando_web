@@ -21,7 +21,7 @@ export default function Landing() {
           </div>
         </div>
 
-        <div className="products-carrusel-containerproducts-tarjetas">
+        <div className="products-carrusel">
           <div className="products-tarjetas">
             <ProductCard></ProductCard>
             <ProductCard></ProductCard>
