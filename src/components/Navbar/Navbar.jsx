@@ -12,18 +12,6 @@ export default function Navbar() {
     { to: '/me', label: 'Perfil' },
   ];
 
-  // const handleLogout = () => {
-  //   localStorage.removeItem("user");
-  //   setUser(null);
-  //   navigate("/");
-  // };
-
-  //   const navigate = useNavigate();
- 
-  // const handleLogin = () => {
-  //   navigate("/login");
-  // };
-
   return (
     <nav className="navbar">
       <div className="navbar__logo">

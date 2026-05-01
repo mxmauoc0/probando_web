@@ -3,6 +3,38 @@ import { Link } from "react-router-dom";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
 import "./Landing.css";
+import urlAxe from "../../assets/ProductsPhotos/Hacha.png";
+import urlChaleco from "../../assets/ProductsPhotos/ChalecoRosado.png";
+import urlPocion from "../../assets/ProductsPhotos/PocionMiau.png";
+import urlSaco from "../../assets/ProductsPhotos/SacoDeDormir.png";
+
+const PRODUCTS = [
+  {
+    productTitle: "Guitarra Hacha",
+    productDescription: "#armas",
+    productPrice: 49.00,
+    productImage: urlAxe,
+  },
+  {
+    productTitle: "Suéter Rosa",
+    productDescription: "#ropa",
+    productPrice: 49.00,
+    productImage: urlChaleco,
+  },
+  {
+    productTitle: "Antidoto Mi-miau",
+    productDescription: "#pocion",
+    productPrice: 67.00,
+    productImage: urlPocion,
+  },
+  {
+    productTitle: "Bolsa de Dormir",
+    productDescription: "#otros",
+    productPrice: 120.00,
+    productImage: urlSaco,
+  },
+];
+
 
 export default function Landing() {
 
@@ -23,9 +55,9 @@ export default function Landing() {
 
         <div className="products-carrusel">
           <div className="products-tarjetas">
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
-            <ProductCard></ProductCard>
+            {PRODUCTS.map((product, index) => (
+              <ProductCard key={index} {...product}></ProductCard>
+            ))}
           </div>
         </div>
 
